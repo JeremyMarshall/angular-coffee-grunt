@@ -17,6 +17,7 @@ angular
     'ngSanitize'
     'ngTouch'
     'ui.sortable'
+    'LocalStorageModule'
   ])
   .config ($routeProvider) ->
     $routeProvider
@@ -28,4 +29,10 @@ angular
         controller: 'AboutCtrl'
       .otherwise
         redirectTo: '/'
+
+  .config([
+      'localStorageServiceProvider'
+      (localStorageServiceProvider) ->
+        localStorageServiceProvider.setPrefix 'ls'
+  ])
 
