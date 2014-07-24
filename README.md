@@ -15,3 +15,5 @@ And then carry on and do the tutorial
 
 http://js2coffee.org is a good place to translate javascript into coffee (so it can convert it back again)
 
+Incidentally, the web.js and Procfile are there so you can push it out to Heroku. This assumes the dist directory is built
+
